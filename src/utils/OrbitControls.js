@@ -1,4 +1,4 @@
-module.exports = function(THREE) {
+module.exports = function() {
     /**
      * @author qiao / https://github.com/qiao
      * @author mrdoob / http://mrdoob.com
@@ -19,6 +19,8 @@ module.exports = function(THREE) {
     /* -- last edit comments
     this script was changed to support better gets and sets of angles
     */
+    const THREE = require("three");
+
     function OrbitControls(object, domElement, updateExternal) {
 
         this.object = object;

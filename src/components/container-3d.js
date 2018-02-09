@@ -5,6 +5,7 @@ import * as THREE from "three";
 //import sizeMe from "react-sizeme";
 //import OBJLoader from 'three-react-obj-loader';
 import * as CSS3DRenderer from "../utils/CSS3DRenderer";
+
 var OrbitControls = require('../utils/OrbitControls')(THREE);
 
 let renderer,
@@ -324,12 +325,12 @@ class Container3d extends Component {
 
             //if (this.relatedCanvas) rootDiv = this.relatedCanvas;
 
-            if (this.updateAngles) {
+            /* if (this.updateAngles) {
                 controls = new OrbitControls(camera, rootDiv, this.updateAngles);
             } else {
                 controls = new OrbitControls(camera, rootDiv);
             }
-
+*/
             if (this.props.rotateSpeed)
                 controls.rotateSpeed = this.props.rotateSpeed
 
