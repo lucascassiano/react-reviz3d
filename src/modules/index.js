@@ -5,6 +5,6 @@ const loadModules = () => {
     require("./Map/Terrain.js");
     require("./Geometries");
 }
-module.exports {
+module.exports = {
     loadModules: loadModules
 }

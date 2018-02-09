@@ -52,7 +52,7 @@
         "storybook": "start-storybook -p 6006",
         "build-storybook": "build-storybook",
         "git": "git add . && git commit -m \"new version (automatically generated)\" && git push origin master",
-        "release": "npm run build && npm version patch  && npm publish"
+        "release": "npm run git && npm run build && npm version patch  && npm publish"
     },
     "jest": {
         "moduleFileExtensions": [
