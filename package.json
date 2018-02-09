@@ -1,6 +1,6 @@
 {
     "name": "react-reviz3d",
-    "version": "0.1.9",
+    "version": "0.1.10",
     "description": "bundle of all reViz3D modules",
     "main": "lib/index.js",
     "author": "lucascassiano",
