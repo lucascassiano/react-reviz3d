@@ -6,5 +6,5 @@ const modules = require('./modules');
 module.exports = {
     CubeView,
     Container3d,
-    revizModules: modules
+    revizModules: modules.loadModules
 }
