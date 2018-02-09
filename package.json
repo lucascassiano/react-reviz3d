@@ -24,6 +24,7 @@
         "babel-core": "^6.18.2",
         "babel-eslint": "^7.2.1",
         "babel-jest": "^19.0.0",
+        "babel-plugin-transform-strict-mode": "^6.24.1",
         "babel-preset-env": "^1.2.2",
         "babel-preset-react": "^6.23.0",
         "enzyme": "^2.8.0",
