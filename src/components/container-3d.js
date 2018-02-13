@@ -290,7 +290,7 @@ class Container3d extends Component {
             enablePan
         } = this.props;
 
-        if (addGrid ? addGrid : false) {
+        if (addGrid) {
             var gridXZ = new THREE.GridHelper(20, 20);
             gridXZ.name = "grid";
             scene.add(gridXZ);
@@ -363,19 +363,20 @@ class Container3d extends Component {
             enablePan
         } = this.props;
 
-        if (addGrid != undefined ? addGrid : true) {
+        if (addGrid) {
             var gridXZ = new THREE.GridHelper(20, 20);
             gridXZ.name = "grid";
             scene.add(gridXZ);
-
+            /*
             var planeGeometry = new THREE.PlaneGeometry(20, 20);
             planeGeometry.rotateX(-Math.PI / 2);
             var planeMaterial = new THREE.ShadowMaterial({
                 opacity: 0.4
             });
-            //var plane = new THREE.Mesh(planeGeometry, planeMaterial);
-            //plane.receiveShadow = true;
-            //scene.add(plane);
+            var plane = new THREE.Mesh(planeGeometry, planeMaterial);
+            plane.receiveShadow = true;
+            scene.add(plane);
+            */
         }
 
         if (addControls) {
@@ -454,19 +455,15 @@ class Container3d extends Component {
         let style1 = {
             zIndex: 5
         };
-        return ( <
-            div ref = "rootthree" >
+        return ( <div ref = "rootthree" >
 
-            <
-            canvas ref = "threeCanvas"
+            <canvas ref = "threeCanvas"
             style = { style1 }
             /> 
 
-            <
-            div ref = "cssCanvas" / >
+            <div ref = "cssCanvas" / >
 
-            <
-            /div>
+            </div>
         );
     }
 }
