@@ -297,12 +297,14 @@ class Container3d extends Component {
 
             var planeGeometry = new THREE.PlaneGeometry(20, 20);
             planeGeometry.rotateX(-Math.PI / 2);
+
             var planeMaterial = new THREE.ShadowMaterial({
                 opacity: 0.4
             });
-            var plane = new THREE.Mesh(planeGeometry, planeMaterial);
-            plane.receiveShadow = true;
-            scene.add(plane);
+
+            //var plane = new THREE.Mesh(planeGeometry, planeMaterial);
+            //plane.receiveShadow = true;
+            //scene.add(plane);
         }
 
         if (addLight != undefined ? addLight : false) {
