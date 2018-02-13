@@ -373,9 +373,9 @@ class Container3d extends Component {
             var planeMaterial = new THREE.ShadowMaterial({
                 opacity: 0.4
             });
-            var plane = new THREE.Mesh(planeGeometry, planeMaterial);
-            plane.receiveShadow = true;
-            scene.add(plane);
+            //var plane = new THREE.Mesh(planeGeometry, planeMaterial);
+            //plane.receiveShadow = true;
+            //scene.add(plane);
         }
 
         if (addControls) {
